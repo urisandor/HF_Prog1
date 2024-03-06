@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+
+int main(){
+
+    int n = 3;
+    for (int i = 1; i <= n; i++)
+    {
+        int ter = 2;
+        int szokozok = n-i; //2
+        int teglak = i; //1
+        
+        for (int j = 0; j < szokozok; j++)
+        {
+            printf(" ");
+        }
+        for (int k = 0; k < teglak; k++)
+        {
+            printf("#");
+        }
+        for (int z = 0; z < ter; z++)
+        {
+            printf(" ");
+        }
+        for (int v = 0; v < teglak; v++)
+        {
+            printf("#");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
